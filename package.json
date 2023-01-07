@@ -1,19 +1,18 @@
 {
    "private": true,
    "name": "typescript-starter",
-   "version": "0.3.0",
-   "author": "slaylocal <slaylocal@gmail.com>",
+   "version": "0.3.1",
+   "author": "ProxityStudios",
    "license": "MIT",
-   "homepage": "https://github.com/slaylocal/typescript-starter/blob/main/README.md",
+   "homepage": "https://github.com/ProxityStudios/typescript-starter/blob/main/README.md",
    "readme": "./README.md",
    "bugs": {
-      "url": "https://github.com/slaylocal/typescript-starter/issues"
+      "url": "https://github.com/ProxityStudios/typescript-starter/issues"
    },
    "scripts": {
-      "install-deps": "npm install",
-      "start": "node dist/production/index.js",
-      "start:dev": "node dist/development/index.js",
-      "in-dev": "ts-node-dev --respawn src",
+      "start": "node dist/production/main.js",
+      "start:dev": "node dist/development/main.js",
+      "in-dev": "ts-node-dev --respawn src/main.ts",
       "fix": "concurrently \"npm run fix:prettier\"  \"npm run fix:lint\"",
       "fix:prettier": "prettier \"src/**/*.ts\" --write",
       "fix:lint": "eslint \"src/**/*.ts\" --fix",
@@ -22,6 +21,7 @@
    },
    "devDependencies": {
       "@types/node": "^16.11.0",
+      "@types/yargs": "^17.0.19",
       "@typescript-eslint/eslint-plugin": "^5.1.0",
       "@typescript-eslint/parser": "^5.1.0",
       "eslint": "^7.32.0",
@@ -32,6 +32,9 @@
    "dependencies": {
       "concurrently": "^6.3.0",
       "dotenv": "^10.0.0",
-      "winston": "^3.3.3"
+      "typescript-logging": "^2.0.2",
+      "typescript-logging-log4ts-style": "^2.0.2",
+      "winston": "^3.3.3",
+      "yargs": "^17.6.2"
    }
 }

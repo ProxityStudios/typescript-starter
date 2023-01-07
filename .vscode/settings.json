@@ -70,5 +70,9 @@
       "**/.next/**"
    ],
    "todohighlight.maxFilesForSearch": 5120,
-   "todohighlight.toggleURI": false
+   "todohighlight.toggleURI": false,
+   "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true
+   }
 }
