@@ -1,0 +1,74 @@
+{
+   "todohighlight.isEnable": true,
+   "todohighlight.isCaseSensitive": true,
+   "todohighlight.keywords": [
+      {
+         "text": "TODO:",
+         "color": "#ff0000",
+         "backgroundColor": "none",
+         "overviewRulerColor": "grey"
+      },
+      {
+         "text": "FIXME:",
+         "color": "#00e1ff",
+         "backgroundColor": "none",
+         "overviewRulerColor": "grey"
+      },
+      {
+         "text": "DEBUG:",
+         "color": "#6257ff",
+         "backgroundColor": "none",
+         "overviewRulerColor": "grey"
+      },
+      {
+         "text": "REVIEW:",
+         "color": "#5797ff",
+         "backgroundColor": "none",
+         "overviewRulerColor": "grey"
+      },
+      {
+         "text": "NOTE:",
+         "color": "#ff8000",
+         "backgroundColor": "none",
+         "overviewRulerColor": "grey"
+      },
+      {
+         "text": "HACK:",
+         "color": "#6f7b7d",
+         "backgroundColor": "none",
+         "overviewRulerColor": "grey"
+      },
+      {
+         "text": "?:",
+         "color": "#812fc4",
+         "backgroundColor": "none"
+      }
+   ],
+   "todohighlight.defaultStyle": {
+      "cursor": "pointer"
+   },
+   "todohighlight.include": [
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.html",
+      "**/*.css",
+      "**/*.scss",
+      "**/*.vue"
+   ],
+   "todohighlight.exclude": [
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.vscode/**",
+      "**/.github/**",
+      "**/_output/**",
+      "**/*.min.*",
+      "**/*.map",
+      "**/.next/**"
+   ],
+   "todohighlight.maxFilesForSearch": 5120,
+   "todohighlight.toggleURI": false
+}
