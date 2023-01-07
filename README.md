@@ -1,4 +1,4 @@
-# Typescript Project Starter - [@ProxityStudios/typescript-starter - v0.3.0](https://github.com/ProxityStudios/typescript-starter)
+# Typescript Project Starter
 
 ## Features
 
