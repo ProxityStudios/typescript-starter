@@ -4,10 +4,10 @@
 
 -  Eslint
 -  Prettier
--  Extension Recommendations (prettier, todo highlighting)
--  Loggin System
+-  Extension Recommendations
+-  Logging System
 -  Environment System
--  Tsconfig (production/development)
+-  TsConfig (production/development)
 
 ## TODO Highlighting
 
