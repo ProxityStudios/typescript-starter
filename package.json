@@ -33,9 +33,6 @@
       "concurrently": "^6.3.0",
       "dotenv": "^10.0.0",
       "tslog": "^4.7.1",
-      "typescript-logging": "^2.0.2",
-      "typescript-logging-log4ts-style": "^2.0.2",
-      "winston": "^3.3.3",
       "yargs": "^17.6.2"
    }
 }
