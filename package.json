@@ -12,7 +12,7 @@
    "scripts": {
       "start": "node dist/production/main.js --experimental-specifier-resolution=node --env production",
       "start:dev": "node dist/development/main.js --experimental-specifier-resolution=node",
-      "in-dev": "ts-node-dev --respawn src/main.ts --experimental-specifier-resolution=node",
+      "in-dev": "ts-node-dev --respawn src/main.ts --rs --debounce --experimental-specifier-resolution=node",
       "fix": "concurrently \"npm run fix:prettier\"  \"npm run fix:lint\"",
       "fix:prettier": "prettier \"src/**/*.ts\" --write",
       "fix:lint": "eslint \"src/**/*.ts\" --fix",
