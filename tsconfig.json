@@ -1,0 +1,28 @@
+{
+   "compilerOptions": {
+      "incremental": true,
+      "target": "ESNext",
+      "lib": ["ESNext", "DOM"],
+      "module": "commonjs",
+      "rootDir": "./src",
+      "typeRoots": ["node_modules/@types"],
+      "resolveJsonModule": true,
+      "declaration": true,
+      "declarationMap": true,
+      "outDir": "./dist/development",
+      "inlineSourceMap": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "noImplicitAny": false,
+      "strictNullChecks": false,
+      "noImplicitThis": false,
+      "useUnknownInCatchVariables": true,
+      "alwaysStrict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "skipDefaultLibCheck": true,
+      "skipLibCheck": true
+   }
+}
