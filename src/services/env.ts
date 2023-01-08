@@ -1,6 +1,9 @@
 import { config } from 'dotenv';
 import { join } from 'path';
+import { Logger } from 'tslog';
 import { parseSync } from 'yargs';
+
+const envLogger = new Logger({ type: "pretty", name: "EnvLogger" });
 
 // Function that retrieves the value of an environment variable
 export function getEnv(name: string, defaultValue = ''): string {
@@ -38,22 +41,13 @@ const { env } = parseSync();
 
 // Load the .env file for the specified environment
 if (env) {
+   envLogger.info("Loading the .env file for the specified environment:", env);
    loadEnvFileForEnv(env as string);
 } else {
+   envLogger.info("Loading .env file from the current working directory");
    // Load the .env file from the current working directory
    loadEnvFile(join(process.cwd(), '.env'));
 }
-
-// Override configuration values using command-line arguments
-process.argv.forEach((arg: string) => {
-   const [key, value] = arg.split('=');
-   if (key && value) {
-      process.env[key] = value;
-   }
-});
-
-// Load the .env file from the current working directory
-loadEnvFile(join(process.cwd(), '.env'));
 
 // Override configuration values using command-line arguments
 process.argv.forEach((arg: string) => {

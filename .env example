@@ -1,3 +1,2 @@
-# Misc
 NODE_ENV=development
 TASKS_CONFIG={ "task1": { "parallel": false, "tasks": [] } }
