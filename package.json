@@ -20,18 +20,18 @@
       "build:dev": "concurrently -n fix \"tsc --project tsconfig.json\""
    },
    "devDependencies": {
-      "@types/node": "^16.11.0",
+      "@types/node": "^18.11.18",
       "@types/yargs": "^17.0.19",
-      "@typescript-eslint/eslint-plugin": "^5.1.0",
-      "@typescript-eslint/parser": "^5.1.0",
-      "eslint": "^7.32.0",
-      "prettier": "^2.4.1",
-      "ts-node-dev": "^1.1.8",
-      "typescript": "^4.4.4"
+      "@typescript-eslint/eslint-plugin": "^5.48.0",
+      "@typescript-eslint/parser": "^5.48.0",
+      "eslint": "^8.31.0",
+      "prettier": "^2.8.2",
+      "ts-node-dev": "^2.0.0",
+      "typescript": "^4.9.4"
    },
    "dependencies": {
-      "concurrently": "^6.3.0",
-      "dotenv": "^10.0.0",
+      "concurrently": "^7.6.0",
+      "dotenv": "^16.0.3",
       "tslog": "^4.7.1",
       "yargs": "^17.6.2"
    }
