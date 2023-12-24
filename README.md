@@ -75,14 +75,15 @@ npm run fix
 ### Setup Guide
 
 1. Install the dependencies by using [this](#installscript) script
-2. Start the development environment by using [this](#startdevelopment) script
-3. Code somethings...
+2. Rename the `.env example` file to `.env` 
+3. Start the development environment by using [this](#startdevelopment) script
+4. Code somethings...
 
 #### Production Usage
 
 1. Build the project by using [this](#build) script
-1. Start the project by using [this](#start) script
-
+2. Rename the `.env.production example` file to `.env.production` 
+3. Start the project by using [this](#start) script
 ### `TODO Highlighting` Extension Guide
 
 If you installed the "TODO Highlighting" extension,
