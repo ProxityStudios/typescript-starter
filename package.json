@@ -13,7 +13,7 @@
       "start": "node dist/main.js --experimental-specifier-resolution=node --env production",
       "dev": "ts-node-dev --respawn src/main.ts --rs --debounce 2000 --experimental-specifier-resolution=node",
       "build": "concurrently -n fix \"tsc --project tsconfig.json\"",
-      "fix": "concurrently \"npm run fix:prettier\"  \"npm run fix:lint\"",
+      "fix": "concurrently \"npm run fix:prettier\"  \"npm run fix:eslint\"",
       "fix:prettier": "prettier \"src/**/*.ts\" --write",
       "fix:eslint": "eslint \"src/**/*.ts\" --fix"
    },
