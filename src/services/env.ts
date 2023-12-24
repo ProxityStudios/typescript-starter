@@ -24,8 +24,8 @@ export function getEnvAsBool(name: string, defaultValue = false): boolean {
    return value === 'true' || value === '1'
       ? true
       : value === 'false' || value === '0'
-      ? false
-      : defaultValue;
+        ? false
+        : defaultValue;
 }
 
 // Function that retrieves the value of an environment variable as a number
@@ -49,7 +49,10 @@ const { env } = parseSync();
 
 // Load the .env file for the specified environment
 if (env) {
-   envLogger.info('Loading the ".env" file for the specified environment:', env);
+   envLogger.info(
+      'Loading the ".env" file for the specified environment:',
+      env,
+   );
    loadEnvFileForEnv(env as string);
 } else {
    envLogger.info('Loading ".env" file from the current working directory');
