@@ -11,7 +11,7 @@ declare global {
    }
 }
 
-const envLogger = new Logger({ type: 'pretty', name: 'EnvLogger' });
+const envLogger = new Logger({ type: 'pretty', name: 'Environment' });
 
 // Function that retrieves the value of an environment variable
 export function getEnv(name: string, defaultValue = ''): string {
@@ -49,10 +49,10 @@ const { env } = parseSync();
 
 // Load the .env file for the specified environment
 if (env) {
-   envLogger.info('Loading the .env file for the specified environment:', env);
+   envLogger.info('Loading the ".env" file for the specified environment:', env);
    loadEnvFileForEnv(env as string);
 } else {
-   envLogger.info('Loading .env file from the current working directory');
+   envLogger.info('Loading ".env" file from the current working directory');
    // Load the .env file from the current working directory
    loadEnvFile(join(process.cwd(), '.env'));
 }

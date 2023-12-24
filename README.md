@@ -1,83 +1,85 @@
-# Typescript Project Starter
+# Typescript Starter
+
+This source is designed to help developers that using TypeScript language and Visual Studio Codeww.
 
 ## Features
 
--  Eslint
--  Prettier
--  Extension Recommendations
--  Logging System
--  Environment System
--  TsConfig (production/development)
+- Logging system
+- Environment system
 
-## TODO Highlighting
+## Included External Packages
 
-```
-/**
- * If you installed the "TODO Highlighting" extension,
- * you can use the these prefixes:
- *
- * TODO: Something that should be done.
- * FIXME: Something that should be fixed.
- * HACK: Something that should be removed.
- * DEBUG: Something that should be fixed, but isn't.
- * REVIEW: Something that should be reviewed.
- * NOTE: Something that should be noted.
- *
- * ?: Stuff that isn't important.
- */
-```
+*_You can remove these packages if you don't want to use them._
+
+- `eslint`
+- `prettier`
+- `concurrently` 
+    * _If you remove this package(`concurrently`), you will need to remove other external packages or edit the script that the package uses in `package.json`_
+
+## Extension Recommendations
+
+We recommend installing these recommended extensions by us.
+
+- Extension `prettier` (`esbenp.prettier-vscode`)
+- Extension `todo highlight` (`wayou.vscode-todo-highlight`)
+- Extension `eslint` (`dbaeumer.vscode-eslint`)
 
 ## Scripts
 
-Available scripts listed below
-
--  To install dependencies **_(important)_**
+#### Install dependencies **_(important)_**
 
 ```
 npm run install
 ```
 
--  To start project **_(must be built)_**
+#### Start the project from bundle/build. You can bundle/build the project using `npm run build` script for production.
 
 ```
 npm run start
 ```
 
--  To start in development
+#### Start the project in development environment
 
 ```
-npm run start:dev
+npm run dev
 ```
 
--  To start in development **_(watch)_**
+#### Fix bla bla...
 
 ```
-npm run in-dev
+npm run fix
 ```
 
--  To fix with prettier
+- Use the packages specificaly 
+    - Use `prettier` package
+
+    ```
+    npm run fix:prettier
+    ```
+
+    -  Use `eslint` package
+
+    ```
+    npm run fix:eslint
+    ```
+
+#### Build the project to be used on production
 
 ```
-npm run fix:prettier
+npm run build
 ```
 
--  To fix with eslint
+## Guides
 
-```
-npm run fix:lint
-```
+### `TODO Highlighting` Extension Guide
 
--  To build in production
+If you installed the "TODO Highlighting" extension,
+you can use the these prefixes:
 
-```
-npm run build:prod
-```
-
--  To build in development
-
-```
-npm run build:dev
-```
+- `TODO:` Something that should be done.
+- `BUG:` Use this prefix if you write something about the bug.
+- `REVIEW:` Something that should be reviewed.
+- `NOTE:` Something that should be noted.
 
 ## License
 

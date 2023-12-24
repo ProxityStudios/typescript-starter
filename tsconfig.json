@@ -7,9 +7,10 @@
       "rootDir": "./src",
       "typeRoots": ["node_modules/@types"],
       "resolveJsonModule": true,
+      "removeComments": true,
       "declaration": true,
       "declarationMap": true,
-      "outDir": "./dist/development",
+      "outDir": "./dist",
       "inlineSourceMap": true,
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
@@ -21,7 +22,7 @@
       "alwaysStrict": true,
       "noUnusedLocals": true,
       "noUnusedParameters": true,
-      "noImplicitReturns": true,
+      "noImplicitReturns": false,
       "skipDefaultLibCheck": true,
       "skipLibCheck": true
    }

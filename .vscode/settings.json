@@ -9,14 +9,8 @@
          "overviewRulerColor": "grey"
       },
       {
-         "text": "FIXME:",
+         "text": "BUG:",
          "color": "#00e1ff",
-         "backgroundColor": "none",
-         "overviewRulerColor": "grey"
-      },
-      {
-         "text": "DEBUG:",
-         "color": "#6257ff",
          "backgroundColor": "none",
          "overviewRulerColor": "grey"
       },
@@ -31,17 +25,6 @@
          "color": "#ff8000",
          "backgroundColor": "none",
          "overviewRulerColor": "grey"
-      },
-      {
-         "text": "HACK:",
-         "color": "#6f7b7d",
-         "backgroundColor": "none",
-         "overviewRulerColor": "grey"
-      },
-      {
-         "text": "?:",
-         "color": "#812fc4",
-         "backgroundColor": "none"
       }
    ],
    "todohighlight.defaultStyle": {

@@ -1,7 +1,7 @@
 {
    "private": true,
    "name": "typescript-starter",
-   "version": "0.3.1",
+   "version": "0.4.0",
    "author": "ProxityStudios",
    "license": "MIT",
    "homepage": "https://github.com/ProxityStudios/typescript-starter/blob/main/README.md",
@@ -10,29 +10,27 @@
       "url": "https://github.com/ProxityStudios/typescript-starter/issues"
    },
    "scripts": {
-      "start": "node dist/production/main.js --experimental-specifier-resolution=node --env production",
-      "start:dev": "node dist/development/main.js --experimental-specifier-resolution=node",
-      "in-dev": "ts-node-dev --respawn src/main.ts --rs --debounce --experimental-specifier-resolution=node",
+      "start": "node dist/main.js --experimental-specifier-resolution=node --env production",
+      "dev": "ts-node-dev --respawn src/main.ts --rs --debounce 2000 --experimental-specifier-resolution=node",
+      "build": "concurrently -n fix \"tsc --project tsconfig.json\"",
       "fix": "concurrently \"npm run fix:prettier\"  \"npm run fix:lint\"",
       "fix:prettier": "prettier \"src/**/*.ts\" --write",
-      "fix:lint": "eslint \"src/**/*.ts\" --fix",
-      "build:prod": "concurrently -n fix \"tsc --project tsconfig.production.json\"",
-      "build:dev": "concurrently -n fix \"tsc --project tsconfig.json\""
+      "fix:eslint": "eslint \"src/**/*.ts\" --fix"
    },
    "devDependencies": {
-      "@types/node": "^18.11.18",
-      "@types/yargs": "^17.0.19",
-      "@typescript-eslint/eslint-plugin": "^5.48.0",
-      "@typescript-eslint/parser": "^5.48.0",
-      "eslint": "^8.31.0",
-      "prettier": "^2.8.2",
+      "@types/node": "^20.10.5",
+      "@types/yargs": "^17.0.32",
+      "@typescript-eslint/eslint-plugin": "^6.15.0",
+      "@typescript-eslint/parser": "^6.15.0",
+      "eslint": "^8.56.0",
+      "prettier": "^3.1.1",
       "ts-node-dev": "^2.0.0",
-      "typescript": "^4.9.4"
+      "typescript": "^5.3.3"
    },
    "dependencies": {
-      "concurrently": "^7.6.0",
-      "dotenv": "^16.0.3",
-      "tslog": "^4.7.1",
-      "yargs": "^17.6.2"
+      "concurrently": "^8.2.2",
+      "dotenv": "^16.3.1",
+      "tslog": "^4.9.2",
+      "yargs": "^17.7.2"
    }
 }
