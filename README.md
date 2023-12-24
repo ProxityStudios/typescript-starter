@@ -1,6 +1,7 @@
 # Typescript Starter
 
-This source is designed to help developers that using TypeScript language and Visual Studio Code.
+This source is designed to prevent developers from doing things over and over again. 
+
 
 ## Features
 
@@ -18,7 +19,7 @@ This source is designed to help developers that using TypeScript language and Vi
 
 ## Recommended Extensions
 
-We recommend installing these recommended extensions by us.
+We recommend installing these recommended extensions by us for **Visual Studio Code**.
 
 -  Extension `prettier` (`esbenp.prettier-vscode`)
 -  Extension `todo highlight` (`wayou.vscode-todo-highlight`)
