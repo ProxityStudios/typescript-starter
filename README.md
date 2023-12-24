@@ -16,7 +16,7 @@ This source is designed to help developers that using TypeScript language and Vi
 -  `concurrently`
    -  _If you remove this package(`concurrently`), you will need to remove other external packages or edit the script that the package uses in `package.json`_
 
-## Extension Recommendations
+## Recommended Extensions
 
 We recommend installing these recommended extensions by us.
 
@@ -84,6 +84,7 @@ npm run fix
 1. Build the project by using [this](#build) script
 2. Rename the `.env.production example` file to `.env.production` 
 3. Start the project by using [this](#start) script
+
 ### `TODO Highlighting` Extension Guide
 
 If you installed the "TODO Highlighting" extension,
