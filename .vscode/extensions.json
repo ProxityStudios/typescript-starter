@@ -2,6 +2,6 @@
    "recommendations": [
       "esbenp.prettier-vscode",
       "wayou.vscode-todo-highlight",
-      "dbaeumer.vscode-eslint",
+      "dbaeumer.vscode-eslint"
    ]
 }

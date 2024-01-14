@@ -55,7 +55,7 @@
    "todohighlight.maxFilesForSearch": 5120,
    "todohighlight.toggleURI": false,
    "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
-      "source.fixAll": true
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
    }
 }

@@ -1,29 +1,27 @@
 {
+   "include": ["./**/*", "./**/.*"],
+   "exclude": ["./dist/**/*"],
    "compilerOptions": {
-      "incremental": true,
-      "target": "ESNext",
-      "lib": ["ESNext", "DOM"],
-      "module": "commonjs",
-      "rootDir": "./src",
-      "typeRoots": ["node_modules/@types"],
-      "resolveJsonModule": true,
-      "removeComments": true,
-      "declaration": true,
-      "declarationMap": true,
+      /* Paths */
       "outDir": "./dist",
-      "inlineSourceMap": true,
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "strict": true,
-      "noImplicitAny": false,
-      "strictNullChecks": false,
-      "noImplicitThis": false,
-      "useUnknownInCatchVariables": true,
-      "alwaysStrict": true,
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "noImplicitReturns": false,
-      "skipDefaultLibCheck": true,
-      "skipLibCheck": true
-   }
+      "typeRoots": ["./node_modules/@types"],
+      /* Project */
+      "target": "ESNext", // TypeScript is not used for building, allow all modern features
+      "module": "CommonJS", // TypeScript is not used for building, allow all modern features
+
+      /* Build */
+      // `tsc` only used to build type declaration files (`.d.ts`)
+      "declaration": true,
+      "declarationMap": true, // Allow jumping to source file instead of 'd.ts' file
+
+      /* Imports */
+      "moduleResolution": "Node", // Yup, we are using Node
+      "forceConsistentCasingInFileNames": true, // Error out if import and file system have a casing mismatch. Recommended by TS.
+      "esModuleInterop": true, // Improve importing from CJS modules, recommended by TS: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-7.html#support-for-import-d-from-cjs-from-commonjs-modules-with---esmoduleinterop
+      "skipLibCheck": true, // Significant perf increase by skipping checking .d.ts files, particularly those in node_modules. Recommended by TS.
+      "resolveJsonModule": true, // Allow importing .json files
+
+      /* Additional */
+      "strict": true // Of course!
+   },
 }

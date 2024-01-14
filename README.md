@@ -7,14 +7,33 @@ This source is designed to help developers that using TypeScript language and Vi
 -  Logging system
 -  Environment system
 
-## Included External Packages
+## Included Packages
 
-\*_You can remove these packages if you don't want to use them._
+-  `yargs`
+-  `dotenv`
+-  `tslog`
 
--  `eslint`
--  `prettier`
--  `concurrently`
-   -  _If you remove this package(`concurrently`), you will need to remove other external packages or edit the script that the package uses in `package.json`_
+## Included Dev Packages
+
+- `@types/node`
+- `@types/yargs`
+- `@typescript-eslint/eslint-plugin`
+- `@typescript-eslint/parser`
+- `eslint`
+- `eslint-config-airbnb-base`
+- `eslint-config-airbnb-typescript`
+- `eslint-config-prettier`
+- `eslint-formatter-pretty`
+- `eslint-plugin-eslint-comments`
+- `eslint-plugin-import`
+- `eslint-plugin-prettier`
+- `eslint-plugin-promise`
+- `eslint-plugin-unicorn`
+- `npm-run-all`
+- `prettier`
+- `rimraf`
+- `ts-node-dev`
+- `typescript`
 
 ## Recommended Extensions
 
@@ -50,39 +69,31 @@ npm run dev
 npm run build
 ```
 
-#### Fix bla bla...
+#### Clean compiled code
+
+```
+npm run clean
+```
+
+#### Fix eslint & prettier errors
 
 ```
 npm run fix
 ```
-
--  Use the packages specificaly
-
-   -  Use `prettier` package
-
-   ```
-   npm run fix:prettier
-   ```
-
-   -  Use `eslint` package
-
-   ```
-   npm run fix:eslint
-   ```
 
 ## Guides
 
 ### Setup Guide
 
 1. Install the dependencies by using [this](#installscript) script
-2. Rename the `.env example` file to `.env` 
+2. Rename the `.env example` file to `.env`
 3. Start the development environment by using [this](#startdevelopment) script
 4. Code somethings...
 
 #### Production Usage
 
 1. Build the project by using [this](#build) script
-2. Rename the `.env.production example` file to `.env.production` 
+2. Rename the `.env.production example` file to `.env.production`
 3. Start the project by using [this](#start) script
 
 ### `TODO Highlighting` Extension Guide
