@@ -1,6 +1,6 @@
 # Typescript Starter
 
-This source is designed to help developers that using TypeScript language and Visual Studio Code.
+This source is designed to prevent developers from doing things over and over again. 
 
 ## Features
 
