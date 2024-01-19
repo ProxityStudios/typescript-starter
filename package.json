@@ -13,7 +13,7 @@
       "url": "https://github.com/ProxityStudios/typescript-starter/issues"
    },
    "scripts": {
-      "start": "node dist/main.js --env production",
+      "start": "node dist/main.js",
       "dev": "ts-node-dev --respawn src/main.ts --env development",
       "build": "run-s fix clean build:tsc",
       "build:tsc": "tsc --build",

@@ -48,10 +48,7 @@ const { env } = parseSync();
 
 // Load the .env file for the specified environment
 if (env) {
-	envLogger.info(
-		'Loading the ".env" file for the specified environment:',
-		env
-	);
+	envLogger.info(`Loading the ".env.${env as string}" file`);
 	loadEnvFileForEnv(env as string);
 } else {
 	envLogger.info('Loading ".env" file from the current working directory');
