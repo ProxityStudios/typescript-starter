@@ -9,8 +9,8 @@
  */
 
 import { Logger } from 'tslog';
-import './services/env';
-import { convertNumToStr } from './util';
+import './lib/env';
+import { convertNumToStr } from './lib/utils';
 
 const mainLogger = new Logger({ type: 'pretty', name: 'Main' });
 

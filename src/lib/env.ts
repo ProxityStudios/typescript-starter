@@ -5,7 +5,6 @@ import { parseSync } from 'yargs';
 
 export interface Env {
 	NODE_ENV: 'development' | 'production';
-	TOKEN: string;
 }
 
 export type EnvKeys = keyof Env;
