@@ -3,33 +3,51 @@ import { join } from 'node:path';
 import { Logger } from 'tslog';
 import { parseSync } from 'yargs';
 
-export interface Env {
-	NODE_ENV: 'development' | 'production';
-}
+/**
+ * Typescript doesnt have support to get list of keys from an interface
+ */
+class EnvClass {
+	NODE_ENV!: 'development' | 'production';
 
+	BOOLEAN!: boolean;
+
+	NUMBER!: number;
+}
+export interface Env extends EnvClass {}
 export type EnvKeys = keyof Env;
+export type EnvKeysArray = Array<EnvKeys>;
 
 const envLogger = new Logger({ type: 'pretty', name: 'Environment' });
 
+function runChecks() {
+	const envClass = new EnvClass();
+	const keys: EnvKeysArray = Object.keys(envClass) as EnvKeysArray;
+	const undefinedKeys: string[] = [];
+
+	keys.forEach((key) => {
+		// TODO: check the types as well
+		const env = getEnv(key);
+
+		if (!env) {
+			undefinedKeys.push(key);
+		}
+	});
+
+	if (undefinedKeys.length > 0) {
+		throw new Error(
+			`[UNDEFINED_ENV_KEYS] Setup these env keys: ${undefinedKeys.join(', ')}`
+		);
+	}
+}
+
+export function isDeveloperMode(): boolean {
+	if (getEnv('NODE_ENV') === 'development') return true;
+	return false;
+}
+
 // Function that retrieves the value of an environment variable
-export function getEnv(name: EnvKeys, defaultValue = ''): string {
-	return process.env[name] || defaultValue;
-}
-
-// Function that retrieves the value of an environment variable as a boolean
-export function getEnvAsBool(name: EnvKeys, defaultValue = false): boolean {
-	const value = getEnv(name);
-	return value === 'true' || value === '1'
-		? true
-		: value === 'false' || value === '0'
-			? false
-			: defaultValue;
-}
-
-// Function that retrieves the value of an environment variable as a number
-export function getEnvAsNumber(name: EnvKeys, defaultValue = 0): number {
-	const value = getEnv(name);
-	return Number.isNaN(Number(value)) ? defaultValue : Number(value);
+export function getEnv<T extends EnvKeys>(key: T): Env[T] {
+	return process.env[key] as Env[T];
 }
 
 // Function that loads the .env file from a specific location
@@ -62,3 +80,5 @@ process.argv.forEach((arg: string) => {
 		process.env[key] = value;
 	}
 });
+
+runChecks();
