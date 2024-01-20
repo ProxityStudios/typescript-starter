@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.0](https://github.com/ProxityStudios/typescript-starter/compare/v1.1.0...v1.2.0) (2024-01-20)
+
+
+### Features
+
+* [#9](https://github.com/ProxityStudios/typescript-starter/issues/9) ([3fcfffb](https://github.com/ProxityStudios/typescript-starter/commit/3fcfffbc2cd3cb2bd46a89510135240df91ba7e1))
+
+
+### Bug Fixes
+
+* [#8](https://github.com/ProxityStudios/typescript-starter/issues/8) ([d01c5e6](https://github.com/ProxityStudios/typescript-starter/commit/d01c5e6b475b8fa5ad195c4d584690c8e88ecfad))
+* add .env.development ([b17ad02](https://github.com/ProxityStudios/typescript-starter/commit/b17ad02e566f22244378d632c9a5dfab19820230))
+* minor fixes ([55336c5](https://github.com/ProxityStudios/typescript-starter/commit/55336c59d871a922e675d2772813ef7cf633275a))
+
 ## [1.1.0](https://github.com/ProxityStudios/typescript-starter/compare/v1.0.0...v1.1.0) (2024-01-14)
 
 
