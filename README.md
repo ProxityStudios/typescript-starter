@@ -37,7 +37,7 @@ This source is designed to prevent developers from doing things over and over ag
 
 ## Recommended Extensions
 
-We recommend installing these recommended extensions by us.
+We recommend you to install these extensions.
 
 -  Extension `prettier` (`esbenp.prettier-vscode`)
 -  Extension `todo highlight` (`wayou.vscode-todo-highlight`)
@@ -45,13 +45,13 @@ We recommend installing these recommended extensions by us.
 
 ## Scripts
 
-#### <a href="#installscript"></a> Install dependencies **_(important)_**
+#### <a href="#installscript"></a> Install dependencies
 
 ```
 npm run install
 ```
 
-#### <a href="#start"></a> Start the project from bundle/build. You must bundle/build the project using `npm run build` script for production before using the command.
+#### <a href="#start"></a> Start the project. You must build the project by using `npm run build` command.
 
 ```
 npm run start
@@ -63,7 +63,7 @@ npm run start
 npm run dev
 ```
 
-#### <a href="#build"></a> Build the project to be used in production
+#### <a href="#build"></a> Build the project
 
 ```
 npm run build
@@ -85,21 +85,21 @@ npm run fix
 
 ### Setup Guide
 
-1. Install the dependencies by using [this](#installscript) script
-2. Rename the `.env example` file to `.env`
-3. Start the development environment by using [this](#startdevelopment) script
+1. Install dependencies by using [this](#installscript) script
+2. Rename the `.env.development example` file to `.env.development`
+3. Start development by using [this](#startdevelopment) script
 4. Code somethings...
 
 #### Production Usage
 
 1. Build the project by using [this](#build) script
-2. Rename the `.env.production example` file to `.env.production`
+2. Rename the `.env example` file to `.env`
 3. Start the project by using [this](#start) script
 
 ### `TODO Highlighting` Extension Guide
 
-If you installed the "TODO Highlighting" extension,
-you can use the these prefixes:
+If you installed "TODO Highlighting" extension,
+you can use these prefixes:
 
 -  `TODO:` Something that should be done.
 -  `BUG:` Use this prefix if you write something about the bug.
