@@ -22,7 +22,7 @@ module.exports = {
 		// Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
 		'no-prototype-builtins': 'off',
 		'import/prefer-default-export': 'off',
-		'import/no-default-export': 'error',
+		'import/no-default-export': 'off',
 
 		// Use function hoisting to improve code readability
 		'no-use-before-define': [
