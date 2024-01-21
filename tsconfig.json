@@ -1,5 +1,5 @@
 {
-   "include": ["./**/*", "./**/.*"],
+   "include": ["./src/**/*"],
    "exclude": ["./dist/**/*"],
    "compilerOptions": {
       /* Paths */
