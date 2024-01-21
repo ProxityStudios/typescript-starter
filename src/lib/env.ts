@@ -4,7 +4,7 @@ import { Logger } from 'tslog';
 import { parseSync } from 'yargs';
 
 /**
- * Typescript doesnt have support to get list of keys from an interface
+ * Typescript has no support for getting a list of keys from an interface
  */
 class EnvClass {
 	NODE_ENV!: 'development' | 'production';
