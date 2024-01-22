@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/ProxityStudios/typescript-starter/compare/v1.2.1...v1.3.0) (2024-01-22)
+
+
+### Features
+
+* empty commit ([1b7ea40](https://github.com/ProxityStudios/typescript-starter/commit/1b7ea408ae60f2bfb7114d4ba8b575ce3a7c9fac))
+
 ## [1.2.1](https://github.com/ProxityStudios/typescript-starter/compare/v1.2.0...v1.2.1) (2024-01-21)
 
 
