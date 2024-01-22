@@ -1,7 +1,7 @@
 import { config } from 'dotenv';
 import { join } from 'node:path';
-import { Logger } from 'tslog';
 import { parseSync } from 'yargs';
+import { envLogger } from './logger';
 
 /**
  * Typescript has no support for getting a list of keys from an interface
@@ -16,8 +16,6 @@ class EnvClass {
 export interface Env extends EnvClass {}
 export type EnvKeys = keyof Env;
 export type EnvKeysArray = Array<EnvKeys>;
-
-const envLogger = new Logger({ type: 'pretty', name: 'Environment' });
 
 function runChecks() {
 	const envClass = new EnvClass();

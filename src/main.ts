@@ -8,11 +8,9 @@
  * NOTE: Something that should be noted.
  */
 
-import { Logger } from 'tslog';
 import './lib/env';
+import { mainLogger } from './lib/logger';
 import { convertNumToStr } from './lib/utils';
-
-const mainLogger = new Logger({ type: 'pretty', name: 'Main' });
 
 function main() {
 	try {
