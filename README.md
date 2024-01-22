@@ -1,17 +1,17 @@
 # Typescript Starter
 
-This source is designed to prevent developers from doing things over and over again. 
+This source is designed to prevent developers from doing things over and over again.
 
 ## Features
 
--  Logging system
--  Environment system
+- Logging system
+- Environment system
 
 ## Included Packages
 
--  `yargs`
--  `dotenv`
--  `tslog`
+- `yargs`
+- `dotenv`
+- `tslog`
 
 ## Included Dev Packages
 
@@ -39,9 +39,9 @@ This source is designed to prevent developers from doing things over and over ag
 
 We recommend you to install these extensions.
 
--  Extension `prettier` (`esbenp.prettier-vscode`)
--  Extension `todo highlight` (`wayou.vscode-todo-highlight`)
--  Extension `eslint` (`dbaeumer.vscode-eslint`)
+- Extension `prettier` (`esbenp.prettier-vscode`)
+- Extension `todo highlight` (`wayou.vscode-todo-highlight`)
+- Extension `eslint` (`dbaeumer.vscode-eslint`)
 
 ## Scripts
 
@@ -51,7 +51,7 @@ We recommend you to install these extensions.
 npm run install
 ```
 
-#### <a href="#start"></a> Start the project. You must build the project by using `npm run build` command.
+#### <a href="#start"></a> Start the project. You must build the project by using `npm run build` command
 
 ```
 npm run start
@@ -101,10 +101,10 @@ npm run fix
 If you installed "TODO Highlighting" extension,
 you can use these prefixes:
 
--  `TODO:` Something that should be done.
--  `BUG:` Use this prefix if you write something about the bug.
--  `REVIEW:` Something that should be reviewed.
--  `NOTE:` Something that should be noted.
+- `TODO:` Something that should be done.
+- `BUG:` Use this prefix if you write something about the bug.
+- `REVIEW:` Something that should be reviewed.
+- `NOTE:` Something that should be noted.
 
 ## License
 
