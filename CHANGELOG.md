@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/ProxityStudios/typescript-starter/compare/v1.3.0...v1.3.1) (2024-01-23)
+
+
+### Bug Fixes
+
+* this shouldn’t be here ([c9dd525](https://github.com/ProxityStudios/typescript-starter/commit/c9dd52586005b7a9c127346de5e9ef095e6bf968))
+
 ## [1.3.0](https://github.com/ProxityStudios/typescript-starter/compare/v1.2.1...v1.3.0) (2024-01-22)
 
 
