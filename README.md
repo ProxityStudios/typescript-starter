@@ -1,4 +1,4 @@
-# Typescript Starter
+# [Typescript Starter](https://github.com/ProxityStudios/typescript-starter)
 
 This source is designed to prevent developers from doing things over and over again.
 
