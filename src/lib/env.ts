@@ -33,7 +33,7 @@ function runChecks() {
 
 	if (undefinedKeys.length > 0) {
 		throw new Error(
-			`[UNDEFINED_ENV_KEYS] Setup these env keys: ${undefinedKeys.join(', ')}`
+			`[UNDEFINED_ENV_KEYS] Setup undefined keys: ${undefinedKeys.join(', ')}`
 		);
 	}
 }
