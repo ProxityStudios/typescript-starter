@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.2](https://github.com/ProxityStudios/typescript-starter/compare/v1.3.1...v1.3.2) (2024-01-28)
+
+
+### Bug Fixes
+
+* typo fixing ([dd3d626](https://github.com/ProxityStudios/typescript-starter/commit/dd3d6266d6fca8793734d631e954ce8d16349be6))
+
+
+### Reverts
+
+* no need extra files ([fc15530](https://github.com/ProxityStudios/typescript-starter/commit/fc15530c0083525461801e61c54c1dbc6181ff73))
+
 ## [1.3.1](https://github.com/ProxityStudios/typescript-starter/compare/v1.3.0...v1.3.1) (2024-01-23)
 
 
