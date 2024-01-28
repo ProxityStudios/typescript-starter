@@ -10,15 +10,14 @@
 
 import './lib/env';
 import { mainLogger } from './lib/logger';
-import { convertNumToStr } from './lib/utils';
 
 function main() {
 	try {
 		mainLogger.silly('Please star & contribute the repository :)');
 		mainLogger.silly('https://github.com/ProxityStudios/typescript-starter');
 
-		// awesome code to here
-		mainLogger.info('Number converted to string:', convertNumToStr(100));
+		// DO STUFF
+		mainLogger.info('BEEP OP');
 	} catch (error) {
 		if (error instanceof Error) {
 			mainLogger.error(error.message);
