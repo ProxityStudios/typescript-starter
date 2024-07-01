@@ -20,12 +20,6 @@
          "backgroundColor": "none",
          "overviewRulerColor": "grey"
       },
-      {
-         "text": "NOTE:",
-         "color": "#ff8000",
-         "backgroundColor": "none",
-         "overviewRulerColor": "grey"
-      }
    ],
    "todohighlight.defaultStyle": {
       "cursor": "pointer"

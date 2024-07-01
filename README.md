@@ -4,7 +4,7 @@ This source is designed to prevent developers from doing things over and over ag
 
 ## Features
 
-- Logging system
+- Logging
 - Environment system
 
 ## Included Packages
@@ -72,13 +72,13 @@ npm run build
 #### Clean compiled code
 
 ```
-npm run clean
+npm run clean-build
 ```
 
 #### Fix eslint & prettier errors
 
 ```
-npm run fix
+npm run format
 ```
 
 ## Guides
@@ -86,25 +86,24 @@ npm run fix
 ### Setup Guide
 
 1. Install dependencies by using [this](#installscript) script
-2. Rename the `.env.development example` file to `.env.development`
-3. Start development by using [this](#startdevelopment) script
+2. Rename `.env.development example` file to `.env.development`
+3. Start application by using [this](#startdevelopment) script
 4. Code somethings...
 
 #### Production Usage
 
 1. Build the project by using [this](#build) script
-2. Rename the `.env example` file to `.env`
-3. Start the project by using [this](#start) script
+2. Rename `.env example` file to `.env`
+3. Start application by using [this](#start) script
 
 ### `TODO Highlighting` Extension Guide
 
-If you installed "TODO Highlighting" extension,
+If you have extension "TODO Highlighting" ,
 you can use these prefixes:
 
 - `TODO:` Something that should be done.
 - `BUG:` Use this prefix if you write something about the bug.
 - `REVIEW:` Something that should be reviewed.
-- `NOTE:` Something that should be noted.
 
 ## License
 

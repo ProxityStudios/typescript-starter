@@ -5,8 +5,7 @@
 		/* Paths */
 		"outDir": "./dist",
 		"rootDir": "./src",
-
-		"typeRoots": ["./node_modules/@types"],
+		
 		/* Project */
 		"target": "ESNext", // TypeScript is not used for building, allow all modern features
 		"module": "CommonJS", // TypeScript is not used for building, allow all modern features
@@ -26,6 +25,6 @@
 		"resolveJsonModule": true, // Allow importing .json files
 
 		/* Additional */
-		"strict": true, // Of course!
+		"strict": true,
 	},
 }
