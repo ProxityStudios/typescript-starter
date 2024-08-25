@@ -1,23 +1,16 @@
-/**
- * If you have extension "TODO Highlighting",
- * you can use these prefixes:
- *
- * TODO: Should be done.
- * BUG: Describes the bug.
- * REVIEW: Should be reviewed.
- */
-
 import './utils/env';
 import { logger } from './utils/logger';
+import { getEnvKey } from './utils/env';
 
-function main() {
+async function main() {
   try {
+    console.log('APP DEBUG MODE:', getEnvKey('APPLICATION_DEBUG_ENABLED'));
+
     logger.info('Please star and contribute the repository :)');
     logger.info('---> https://github.com/ProxityStudios/typescript-starter');
-
     // DO STUFF
   } catch (error) {
-    
+    throw error; // or console.error(error)
   }
 }
 

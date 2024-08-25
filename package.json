@@ -5,18 +5,15 @@
    "license": "MIT",
    "homepage": "https://github.com/ProxityStudios/typescript-starter/blob/main/README.md",
    "readme": "./README.md",
-   "engines": {
-      "node": ">=18"
-   },
    "bugs": {
       "url": "https://github.com/ProxityStudios/typescript-starter/issues"
    },
    "scripts": {
       "start": "node ./dist/main.js",
       "dev": "ts-node-dev --respawn ./src/main.ts --env development",
-      "build": "run-s fix clean-builds build:tsc",
+      "build": "run-s fix clean-dist build:tsc",
       "build:tsc": "tsc --build",
-      "clean-builds": "rimraf dist/",
+      "clean-dist": "rimraf dist/",
       "format": "eslint . --fix"
    },
    "devDependencies": {

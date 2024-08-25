@@ -1,11 +1,11 @@
 {
-	"include": ["./src/**/*"],
+	"include": ["./src/**/*.{ts}"],
 	"exclude": ["node_modules", "dist"],
 	"compilerOptions": {
 		/* Paths */
 		"outDir": "./dist",
 		"rootDir": "./src",
-		
+
 		/* Project */
 		"target": "ESNext", // TypeScript is not used for building, allow all modern features
 		"module": "CommonJS", // TypeScript is not used for building, allow all modern features
@@ -25,6 +25,6 @@
 		"resolveJsonModule": true, // Allow importing .json files
 
 		/* Additional */
-		"strict": true,
+		"strict": true
 	},
 }
