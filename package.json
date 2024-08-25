@@ -3,8 +3,6 @@
    "version": "1.4.0",
    "author": "ProxityStudios",
    "license": "MIT",
-   "homepage": "https://github.com/ProxityStudios/typescript-starter/blob/main/README.md",
-   "readme": "./README.md",
    "bugs": {
       "url": "https://github.com/ProxityStudios/typescript-starter/issues"
    },
